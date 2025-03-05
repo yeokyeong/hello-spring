@@ -2,10 +2,12 @@ package helloSpring.hello_spring.service;
 
 import helloSpring.hello_spring.domain.Member;
 import helloSpring.hello_spring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
